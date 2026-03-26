@@ -1,0 +1,105 @@
+body{
+    margin:0;
+}
+
+/* Full page */
+
+.lobby-page{
+
+    height:100vh;
+    width:100%;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    background:#0f172a;
+
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Title */
+
+.lobby-title{
+
+    color:white;
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+/* Subtitle */
+
+.lobby-subtitle{
+
+    color:#94a3b8;
+    margin-bottom:40px;
+}
+
+/* Create Room Button */
+
+.create-room-btn{
+
+    padding:12px 24px;
+
+    background:#22c55e;
+
+    border:none;
+    border-radius:6px;
+
+    color:white;
+    font-weight:bold;
+
+    cursor:pointer;
+
+    margin-bottom:30px;
+}
+
+.create-room-btn:hover{
+    background:#16a34a;
+}
+
+/* Join Section */
+
+.join-section{
+
+    display:flex;
+    gap:10px;
+}
+
+/* Input */
+
+.room-input{
+
+    padding:12px;
+    width:220px;
+
+    border:none;
+    border-radius:6px;
+
+    background:#1e293b;
+    color:white;
+
+    outline:none;
+}
+
+/* Join Button */
+
+.join-room-btn{
+
+    padding:12px 20px;
+
+    background:#3b82f6;
+
+    border:none;
+    border-radius:6px;
+
+    color:white;
+    font-weight:bold;
+
+    cursor:pointer;
+}
+
+.join-room-btn:hover{
+    background:#2563eb;
+}
