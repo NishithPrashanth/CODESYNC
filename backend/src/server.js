@@ -3,12 +3,13 @@ const http = require("http");
 const cors = require("cors");
 const { Server } = require("socket.io");
 const socketManager = require("./socketManager");
+
 const app = express();
 
 app.use(cors({
   origin: [
-    
-    "https://codesync-frontend.onrender.com"
+    "http://localhost:5173",
+    "https://codesync-frontend-2c0y.onrender.com"
   ],
   methods: ["GET","POST"]
 }));
@@ -17,13 +18,12 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: "https://codesync-frontend.onrender.com",
+    origin: [
+      "http://localhost:5173",
+      "https://codesync-frontend-2c0y.onrender.com"
+    ],
     methods: ["GET","POST"]
   }
-});
-
-io.on("connection",(socket)=>{
-  console.log("User connected:", socket.id);
 });
 
 socketManager(io);
